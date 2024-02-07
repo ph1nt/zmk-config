@@ -1,0 +1,133 @@
+[
+  {
+    "name": "HNA 38",
+    "author": "H1nt"
+  },
+  [
+    {
+      "x": 1,
+      "t": "#a80000\n#009644\n#0066ff\n\n\n\n\n#0066ff"
+    },
+    "F1\nEsc\n1\n\n\n\n\n!\n\nQ",
+    {
+      "t": "#a80000\n\n#0066ff\n\n\n\n\n#0066ff"
+    },
+    "F2\n\n2\n\n\n\n\n@\n\nW",
+    "F3\n\n3\n\n\n\n\n#\n\nE",
+    "F4\n\n4\n\n\n\n\n$\n\nR",
+    "F5\n\n5\n\n\n\n\n%\n\nT",
+    {
+      "x": 1,
+      "t": "#a80000\n#009644\n#0066ff\n\n\n\n\n#0066ff"
+    },
+    "F6\n[\n6\n\n\n\n{\n^\n\nY",
+    "F7\n]\n7\n\n\n\n}\n&\n\nU",
+    "F8\n-\n8\n\n\n\n_\n*\n\nI",
+    "F9\n=\n9\n\n\n\n+\n(\n\nO",
+    "F10\nBspc\n0\n\n\n\n\n)\n\nP"
+  ],
+  [
+    {
+      "x": 1,
+      "t": "#a80000\n#009644"
+    },
+    "F11\nTab\n\n\nLCTL\n\n\n\n\nA",
+    {
+      "t": "#a80000"
+    },
+    "F12\n\n\n\nLOPT\n\n\n\n\nS",
+    "F13\n\n\n\nLCMD\n\n\n\n\nD",
+    "F14\n\n\n\nLSFT\n\n\n\n\nF",
+    {
+      "t": "#a80000\n\n\n\n#0066ff"
+    },
+    "F15\n\n\n\nLayerU\n\n\n\n\nG",
+    {
+      "x": 1,
+      "t": "#a80000\n#009644\n\n\n#0066ff"
+    },
+    "\nLeft\n\n\nLayerU\n\n\n\n\nH",
+    {
+      "t": "#a80000\n#009644\n#0066ff"
+    },
+    "\nDown\nVol-\n\nRSFT\n\n\n\n\nJ",
+    "\nUp\nVol+\n\nRCMD\n\n\n\n\nK",
+    "\nRight\nMute\n\nROPT\n\n\n\n\nL",
+    {
+      "t": "#a80000\n#009644\n#0066ff\n\n\n\n\n#0066ff"
+    },
+    "\nEnter\n\"\n\nRCTL\n\n\n'\n:\n;"
+  ],
+  [
+    {
+      "x": 1,
+      "t": "#a80000\n\n#0066ff\n\n\n\n\n#0066ff"
+    },
+    "\n\n`\n\n\n\n\n~\n\nZ",
+    {
+      "t": "#000000",
+      "a": 7
+    },
+    "X",
+    "C",
+    "V",
+    "B",
+    {
+      "x": 1
+    },
+    "N",
+    {
+      "t": "#a80000\n\n\n#0066ff",
+      "a": 4
+    },
+    "\n\n\nPlay\n\n\n\n\n\nM",
+    "\n\n\nNext\n\n\n\n\n<\n,",
+    "\n\n\nPrev\n\n\n\n\n>\n.",
+    {
+      "t": "#a80000\n#009644\n#0066ff"
+    },
+    "\n|\n\\\n\n\n\n\n\n?\n/"
+  ],
+  [
+    {
+      "x": 1,
+      "t": "#000000",
+      "a": 7,
+      "w": 1.25
+    },
+    "Fn",
+    {
+      "w": 1.25
+    },
+    "Alt",
+    {
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "w": 1.25
+    },
+    "LayerU",
+    {
+      "w": 2.25
+    },
+    "Space",
+    {
+      "w": 1.25
+    },
+    "LayerD",
+    {
+      "t": "#009644",
+      "w": 1.25
+    },
+    "Ctrl",
+    {
+      "t": "#000000",
+      "sm": "cherry",
+      "sb": "outemu",
+      "st": "PG150T01",
+      "w": 1.25
+    },
+    "Alt"
+  ]
+]
