@@ -1,0 +1,8 @@
+file_format: "1"
+id: hp38
+name: hp38
+type: shield
+url: https://hp38.test
+requires: [nice_view_header]
+features:
+    - display
