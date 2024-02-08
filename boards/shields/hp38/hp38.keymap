@@ -62,6 +62,7 @@
                 &Fn_        &kp LALT     &kp LGUI   &lt LEF ENTER  &ht SPACE LSHIFT  &lt RIG TAB    &kp RGUI      &kp RALT
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_layer {

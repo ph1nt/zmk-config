@@ -1,0 +1,6 @@
+if SHIELD_HP38
+
+config ZMK_KEYBOARD_NAME
+    default "HP38"
+
+endif
