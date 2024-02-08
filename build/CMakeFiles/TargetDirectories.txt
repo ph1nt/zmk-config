@@ -1,0 +1,2 @@
+/Users/peter/git/zmk-config/build/CMakeFiles/edit_cache.dir
+/Users/peter/git/zmk-config/build/CMakeFiles/rebuild_cache.dir
