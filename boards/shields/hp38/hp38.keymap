@@ -25,6 +25,7 @@
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
