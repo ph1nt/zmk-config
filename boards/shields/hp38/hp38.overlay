@@ -2,17 +2,15 @@
  * Copyright (c) 2023 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- zephyr,display = &oled;
-        
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "hp38.dtsi"
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zephyr,display = &oled;
     };
 
     default_transform: keymap_transform_0 {
