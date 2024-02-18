@@ -11,17 +11,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
-            label = "BASE";
-            bindings = <
-                &kp GRAVE  &kp N1    &kp N2    &kp N3     &kp N4   &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0   &kp MINUS  &kp EQUAL
-                &kp TAB    &kp Q     &kp W     &kp E      &kp R    &kp T     &kp Y     &kp U     &kp I     &kp O      &kp P    &kp LBKT   &kp RBKT
-                &kp CAPS   &kp A     &kp S     &kp D      &kp F    &kp G     &kp BSPC  &kp H     &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-                &kp LSHFT  &mt LSHIFT Z     &kp X     &kp C      &kp V    &kp B     &kp ESC   &kp N     &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-/*
+
         default_layer {
             label = "BASE";
             bindings = <
@@ -40,7 +30,9 @@
                 FNC         &kp LALT     &kp LGUI   &lt LEF ENTER  &mt SPACE LSHIFT  &lt RIG TAB    &kp RGUI      &kp RALT   &trans &trans
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+/*
         function_layer {
             label = "FUNC";
             bindings = <
