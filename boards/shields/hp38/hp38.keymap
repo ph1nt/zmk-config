@@ -19,6 +19,7 @@
                 &kp CAPS   &kp A     &kp S     &kp D      &kp F    &kp G     &kp BSPC  &kp H     &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
                 &kp LSHFT  &mt LSHIFT Z     &kp X     &kp C      &kp V    &kp B     &kp ESC   &kp N     &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 /*
         default_layer {
