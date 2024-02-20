@@ -1,3 +1,4 @@
+#include "hp38.dtsi"
 
 &pro_micro_i2c {
     status = "okay";
