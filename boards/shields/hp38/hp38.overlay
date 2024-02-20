@@ -18,6 +18,6 @@
     };
 };
 
-&encoder1 {
+&encoder {
     status = "okay";
 };
