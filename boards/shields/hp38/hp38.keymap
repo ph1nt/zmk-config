@@ -36,7 +36,8 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
         //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
-               // FNC         &kp LALT     &kp LGUI   &lt LEF ENTER  &mt LSHIFT SPACE  &lt RIG TAB    &kp RGUI      &kp RALT   &trans &trans
+               // FNC         &kp LALT     &kp LGUI   &lt LEF ENTER  &mt LSHIFT SPACE  &lt RIG TAB    &kp RGUI      &kp RALT
+               &trans &kp LALT     &kp LGUI   &kp ENTER  &mt LSHIFT SPACE  &kp TAB    &kp RGUI      &kp RALT &trans
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
             >;
             
