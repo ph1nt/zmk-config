@@ -9,6 +9,16 @@
 #define TRI 4
 
 / {
+    behaviors {
+
+    rot_kp: behavior_sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENC_KP";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -30,7 +40,7 @@
                 FNC         &kp LALT     &kp LGUI   &lt LEF ENTER  &mt LSHIFT SPACE  &lt RIG TAB    &kp RGUI      &kp RALT   &trans &trans
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
         };
 /*
         function_layer {
