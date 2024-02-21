@@ -37,7 +37,7 @@
         //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
         //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
                // FNC         &kp LALT     &kp LGUI   &lt LEF ENTER  &mt LSHIFT SPACE  &lt RIG TAB    &kp RGUI      &kp RALT
-                &trans &kp LALT     &kp LGUI   &kp ENTER  &kp SPACE  &kp TAB    &kp RGUI      &kp RALT &trans
+                &trans &kp LALT     &kp LGUI   &kp ENTER  &mt LSHIFT SPACE  &kp TAB    &kp RGUI      &kp RALT &trans
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
             >;
             sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
