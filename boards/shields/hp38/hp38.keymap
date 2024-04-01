@@ -6,7 +6,6 @@
 #define FNC 1
 #define RIG 2
 #define LEF 3
-#define TRI 4
 
 / {
     behaviors {
@@ -31,12 +30,12 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │     ;    │
             &kp A      &kp S      &kp D       &kp F     &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │     /    │
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │  / ?     │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
-        //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
-            &mo FNC      &kp LALT     &kp LGUI     &lt LEF ENTER  &mt LSHIFT SPACE  &lt RIG TAB    &kp RGUI      &kp RALT &trans
+        //│     Fn      │   Control   │   Command   │ L.Up/Enter ││ Shift / Space  │  L.Dn/Tab   │   Command   │  Option    │
+            &mo FNC      &kp LCTRL     &kp LGUI     &lt LEF ENTER  &mt LSHIFT SPACE  &lt RIG TAB    &kp RGUI      &kp RALT
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
             >;
             sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
@@ -50,15 +49,15 @@
             &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F11     │  F12     │  F13     │  F14     │  F15     │   │  H       │  J       │  K       │  L       │     ;    │
-            &kp F11    &kp F12     &kp F13    &kp F14    &kp F15        &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &kp F11    &kp F12     &kp F13    &kp F14    &kp F15        &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │     /    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+        //│  Cmd+Z   │  Cmd+X   │  Cmd+C   │  Cmd+V   │Play Pause│   │ Previous │  Next    │ Volume Up│ Volume Dn│   Mute   │
+            &kp LG(Z)   &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp C_PP     &kp C_PREV &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+        //╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
         //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
-        //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+        //│     Fn      │   Control   │   Command   │ L.Up/Enter ││ Shift / Space  │  L.Dn/Tab   │   Command   │  Option    │
         //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
+            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
@@ -66,19 +65,13 @@
             label = "RIGHT";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+            &kp 1      &kp 2      &kp 3      &kp 4      &kp 5          &kp 6      &kp 7      &kp 8      &kp 9      &kp 0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │     ;    │
-            &kp A      &kp S      &kp D       &kp F     &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &kp TAB    &kp S      &kp D      &kp F      &kp G          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │     /    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
-        //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
+            &kp GRAVE  &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp LBKT   &kp RBKT   &kp NUBS
+        //╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
+            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
@@ -86,39 +79,14 @@
             label = "LEFT";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
+            &kp LS(1)  &kp LS(2)  &kp LS(3)  &kp LS(4)  &kp LS(5)      &kp LS(6)  &kp LS(7)  &kp LS(8)  &kp LS(9)  &kp LS(0)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │     ;    │
-            &kp A      &kp S      &kp D       &kp F     &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &kp A      &kp S      &kp D       &kp F     &kp G          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │     /    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
-        //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
-            >;
-        };
-
-        tri_layer {
-            label = "TRI";
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │     ;    │
-            &kp A      &kp S      &kp D       &kp F     &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │     /    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //╭─────────────┬─────────────┬─────────────┬────────────╮╭────────────────┬─────────────┬─────────────┬────────────╮
-        //│     Fn      │    option   │   command   │  Layer Up  ││     Space      │  Layer Dn   │    Ctrl     │     Alt    │
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        //╰─────────────┴─────────────┴─────────────┴────────────╯╰────────────────┴─────────────┴─────────────┴────────────╯
+            &kp NUHS   &kp X      &kp C      &kp V      &kp B          &kp HOME   &kp END    &kp PG_DN &kp PG_UP   &kp FSLH
+        //╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
+            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
