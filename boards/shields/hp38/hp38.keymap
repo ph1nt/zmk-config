@@ -82,9 +82,9 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │
             &kp LS(1)  &kp LS(2)  &kp LS(3)  &kp LS(4)  &kp LS(5)      &kp LS(6)  &kp LS(7)  &kp LS(8)  &kp LS(9)  &kp LS(0)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp A      &kp S      &kp D       &kp F     &kp G          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ENTER
+            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp NUHS   &kp X      &kp C      &kp V      &kp B          &kp HOME   &kp END    &kp PG_DN &kp PG_UP   &kp FSLH
+            &kp NUHS   &kp X      &kp C      &kp V     &bt BT_CLR      &kp HOME   &kp END    &kp PG_DN &kp PG_UP   &kp FSLH
         //╰──────────┴──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────┴──────────╯
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
